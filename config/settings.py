@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # my apps
     'accounts',
     'pages',
+    'products.apps.ProductsConfig',
 
     # third party apps
     'crispy_forms',
@@ -182,3 +183,14 @@ ACCOUNT_UNIQUE_EMAIL = True
 # crispy forms config
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+# Email config
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'vahid.sharafi1431@gmail.com'
+EMAIL_HOST_PASSWORD = 'dpvrnjgfdgqnjwsb'
+EMAIL_USE_TLS = True
+
+
