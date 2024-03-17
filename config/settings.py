@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # third party apps
     'crispy_forms',
     'crispy_bootstrap5',
+    'rosetta',
     # allauth
     'allauth',
     'allauth.account',
@@ -150,6 +151,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'fa'
+LANGUAGES = (('en', 'English'), ('fa', 'Persian'))
 # TIME_ZONE = 'UTC'
 Time_Zone = 'Asia/Tehran'
 USE_I18N = True
@@ -196,4 +198,10 @@ EMAIL_HOST_USER = 'vahid.sharafi1431@gmail.com'
 EMAIL_HOST_PASSWORD = 'dpvrnjgfdgqnjwsb'
 EMAIL_USE_TLS = True
 
+# for messages framework
+from django.contrib.messages import constants as messages_constant
+MESSAGE_TAGS = {
+messages_constant.ERROR: 'danger'
+
+}
 

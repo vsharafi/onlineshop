@@ -4,17 +4,13 @@ from .forms import CommentForm
 from .models import Product, Comment
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.utils.translation import gettext as _
+from django.contrib import messages
 
 
 class ProductListView(ListView):
     template_name = 'products/product_list.html'
     context_object_name = 'products'
     queryset = Product.objects.filter(active=True).order_by('-datetime_created')
-
-
-def test_translation(request):
-    result = _('hello')
-    return HttpResponse(result)
 
 
 def product_detail(request, pk):

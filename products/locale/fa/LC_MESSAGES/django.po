@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 18:30+0330\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-03-16 11:15+0330\n"
+"PO-Revision-Date: 2024-03-16 11:16-0500\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\models.py:29
 msgid "Comment Text"
@@ -27,7 +28,8 @@ msgid "Stars"
 msgstr "امتیاز"
 
 #: .\templates\products\product_detail.html:14
-msgid "dick"
+#| msgid "Product description"
+msgid "product detail of"
 msgstr "جزئیات محصول"
 
 #: .\templates\products\product_detail.html:37
@@ -58,7 +60,5 @@ msgstr "ارسال"
 msgid "hello"
 msgstr "سلام"
 
-#, fuzzy
-#~| msgid "Product description"
-#~ msgid "product detail"
+#~ msgid "dick"
 #~ msgstr "جزئیات محصول"
